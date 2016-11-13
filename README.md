@@ -1,4 +1,4 @@
-## Tiner
+## Tinder
 
 Week 5 Lab
 
