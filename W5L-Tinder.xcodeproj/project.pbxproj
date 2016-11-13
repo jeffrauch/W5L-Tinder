@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		30DC58C61DD90C2000CDDC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58C51DD90C2000CDDC79 /* AppDelegate.swift */; };
-		30DC58C81DD90C2000CDDC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58C71DD90C2000CDDC79 /* ViewController.swift */; };
 		30DC58CB1DD90C2000CDDC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC58C91DD90C2000CDDC79 /* Main.storyboard */; };
 		30DC58CD1DD90C2000CDDC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC58CC1DD90C2000CDDC79 /* Assets.xcassets */; };
 		30DC58D01DD90C2000CDDC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC58CE1DD90C2000CDDC79 /* LaunchScreen.storyboard */; };
 		30DC58DB1DD90C2000CDDC79 /* W5L_TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58DA1DD90C2000CDDC79 /* W5L_TinderTests.swift */; };
 		30DC58E61DD90C2000CDDC79 /* W5L_TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58E51DD90C2000CDDC79 /* W5L_TinderUITests.swift */; };
+		30DC58F51DD90C8700CDDC79 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58F41DD90C8700CDDC79 /* CardsViewController.swift */; };
+		30DC58F71DD9185D00CDDC79 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC58F61DD9185D00CDDC79 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		30DC58C21DD90C2000CDDC79 /* W5L-Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W5L-Tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC58C51DD90C2000CDDC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30DC58C71DD90C2000CDDC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30DC58CA1DD90C2000CDDC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30DC58CC1DD90C2000CDDC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30DC58CF1DD90C2000CDDC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		30DC58E11DD90C2000CDDC79 /* W5L-TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W5L-TinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC58E51DD90C2000CDDC79 /* W5L_TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W5L_TinderUITests.swift; sourceTree = "<group>"; };
 		30DC58E71DD90C2000CDDC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DC58F41DD90C8700CDDC79 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		30DC58F61DD9185D00CDDC79 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		30DC58C41DD90C2000CDDC79 /* W5L-Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				30DC58F31DD90C7A00CDDC79 /* ViewControllers */,
 				30DC58C51DD90C2000CDDC79 /* AppDelegate.swift */,
-				30DC58C71DD90C2000CDDC79 /* ViewController.swift */,
 				30DC58C91DD90C2000CDDC79 /* Main.storyboard */,
 				30DC58CC1DD90C2000CDDC79 /* Assets.xcassets */,
 				30DC58CE1DD90C2000CDDC79 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				30DC58E71DD90C2000CDDC79 /* Info.plist */,
 			);
 			path = "W5L-TinderUITests";
+			sourceTree = "<group>";
+		};
+		30DC58F31DD90C7A00CDDC79 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30DC58F41DD90C8700CDDC79 /* CardsViewController.swift */,
+				30DC58F61DD9185D00CDDC79 /* ProfileViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DC58C81DD90C2000CDDC79 /* ViewController.swift in Sources */,
+				30DC58F71DD9185D00CDDC79 /* ProfileViewController.swift in Sources */,
+				30DC58F51DD90C8700CDDC79 /* CardsViewController.swift in Sources */,
 				30DC58C61DD90C2000CDDC79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
